@@ -1,4 +1,4 @@
-version: '3.0'
+version: '3.5'
 
 services:
   mysql-docker-container:
@@ -14,15 +14,7 @@ services:
     volumes:
       - /data/mysql
     networks:
-      - autostreet
-
-  eureka-discovery-server:
-    image: eureka-discovery-server:latest
-    container_name: eureka-discovery-server
-    ports:
-      - 8761:8761
-    networks:
-      - autostreet
+      - autostreet_shared
 
   location-service:
     image: location-service:latest
@@ -31,14 +23,14 @@ services:
       dockerfile: Dockerfile
     depends_on:
       - mysql-docker-container
-      - eureka-discovery-server
     ports:
       - 8081:8080
     volumes:
       - /data/app
     networks:
-      - autostreet
+      - autostreet_shared
 
 networks:
-  autostreet:
-    driver: bridge
+  autostreet_shared:
+    external: true
+    name: autostreet_shared
