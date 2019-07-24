@@ -1,3 +1,6 @@
+#Introduction
+
+
 # Application Setup Instructions
 
 This application is intended to be deployed in a docker container. In order to deploy the application in the docker, please follow the instructions given below. 
@@ -8,7 +11,7 @@ This application is intended to be deployed in a docker container. In order to d
 
 ## docker  network set up
 
-All the containers are intercommunicated through a shared network called **<mark>autostreet_shared</mark>**.  
+All the containers are intercommunicated through a shared network called **<mark>autostreet_shared</mark>**. This must be made available prior to set up your containers. This can be done as follows.  
 
 &nbsp;
 &nbsp;
