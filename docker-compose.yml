@@ -24,7 +24,7 @@ services:
     depends_on:
       - mysql-docker-container
     ports:
-      - 8081:8080
+      - 8081:8081
     volumes:
       - /data/app
     networks:
