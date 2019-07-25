@@ -208,7 +208,7 @@ This will return a list of cities registered under the given district
 
 &nbsp;
 
-#### **Response Body** - *success response*
+**Response Body** - *success response*
 list of cities registered under the given district 
  
 
@@ -251,7 +251,7 @@ list of cities registered under the given district
 &nbsp;
 &nbsp;
 
-#### **Response Body** - *error response*
+**Response Body** - *error response*
 The following response will return if the district id does not exist
 
 * ``Status : 404``
