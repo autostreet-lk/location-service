@@ -268,10 +268,7 @@ The following response will return if the district id does not exist
 # 5. Contact Me
 If you need any clarification, you can reach me through following ways.
 
-**Name** Chathuranga Tennakoon 
-
-**Email** chathurangat@gmail.com
-
-**Blog** www.SpringBootDev.com
-
+**Name** Chathuranga Tennakoon <br/>
+**Email** chathurangat@gmail.com <br/>
+**Blog** www.SpringBootDev.com <br/>
 **Phone** +94716329281
