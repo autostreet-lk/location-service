@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 public interface LocationApi {
 
-    @GetMapping(value = "/districts", headers = "X-API-VERSION=" + VERSION)
+    @GetMapping(value = "/districts", headers = "X-Api-Version=" + VERSION)
     DistrictListResponse getAllDistricts();
 
-    @GetMapping(value = "/districts/{district-id}/cities", headers = "X-API-VERSION=" + VERSION)
+    @GetMapping(value = "/districts/{district-id}/cities", headers = "X-Api-Version=" + VERSION)
     CityListResponse getAllCitiesByDistrict(@PathVariable("district-id") Long districtId) throws DistrictNotFoundException;
 }

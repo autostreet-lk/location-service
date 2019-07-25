@@ -191,6 +191,10 @@ This will return a list of all districts
 # GET  /districts/{district-id}/cities
 This will return a list of cities registered under the given district
 
+**Params**
+* ```district-id```  - id (identifier) of the desired district 
+
+
 **Headers**
  * ```Content-Type: application/json```
  * ```Accept: application/json```
@@ -204,7 +208,9 @@ This will return a list of cities registered under the given district
 
 &nbsp;
 
-**Response Body**
+####**Response Body** - *success response*
+list of cities registered under the given district 
+ 
 
 * ``Status : 200``
 * ``Content-Type : application/json``
@@ -244,7 +250,22 @@ This will return a list of cities registered under the given district
 
 &nbsp;
 &nbsp;
-# 5. Developer Contact
+
+####**Response Body** - *error response*
+The following response will return if the district id does not exist
+
+* ``Status : 404``
+* ``Content-Type : application/json``
+
+```
+{
+    "message": "no district found with id [900]"
+}
+```
+
+&nbsp;
+&nbsp;
+# 5. Contact Me
 If you need any clarification, you can reach me through following ways.
 
 **Name** Chathuranga Tennakoon 
